@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 (function () {
+=======
+(function() {
+>>>>>>> 315adbc069702941257f75b015370a568e779325
   "use strict"; // Start of use strict
 
   var mainNav = document.querySelector('#mainNav');
@@ -6,7 +10,11 @@
   if (mainNav) {
 
     // Collapse Navbar
+<<<<<<< HEAD
     var collapseNavbar = function () {
+=======
+    var collapseNavbar = function() {
+>>>>>>> 315adbc069702941257f75b015370a568e779325
 
       var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
@@ -22,6 +30,7 @@
     document.addEventListener("scroll", collapseNavbar);
   }
 
+<<<<<<< HEAD
 })();
 
 $(window).on('load', function () {
@@ -43,4 +52,7 @@ $(window).scroll(function () {
 
   }
 });
+=======
+})(); // End of use strict
+>>>>>>> 315adbc069702941257f75b015370a568e779325
 
