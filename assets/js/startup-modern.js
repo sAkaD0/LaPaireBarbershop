@@ -1,4 +1,4 @@
-(function() {
+(function () {
   "use strict"; // Start of use strict
 
   var mainNav = document.querySelector('#mainNav');
@@ -6,7 +6,7 @@
   if (mainNav) {
 
     // Collapse Navbar
-    var collapseNavbar = function() {
+    var collapseNavbar = function () {
 
       var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
@@ -22,5 +22,25 @@
     document.addEventListener("scroll", collapseNavbar);
   }
 
-})(); // End of use strict
+})();
+
+$(window).on('load', function () {
+  $('.apparition').css('opacity', 0);
+  old = $(window).scrollTop();
+})
+$(window).scroll(function () {
+
+
+  hauteur = $(window).scrollTop() + $(window).height()
+
+  if ($(window).scrollTop() >= old + 50) {
+    $('.apparition').each(function () {
+      if ($(this).offset().top < hauteur) {
+        $(this).css('opacity', 1);
+        old = $(window).scrollTop();
+      }
+    })
+
+  }
+});
 

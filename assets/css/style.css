@@ -81,6 +81,11 @@ body {
   pointer-events: none;
 }
 
+.apparition {
+  opacity: 1;
+  transition: 1s;
+}
+
 @media screen and (max-width: 1080px) {
   #reseaux {
     display: none;
