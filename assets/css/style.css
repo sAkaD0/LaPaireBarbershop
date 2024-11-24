@@ -77,7 +77,6 @@ body {
   border-color: #000000d9 !important;
 }
 
-<<<<<<< HEAD
 .scrolloff {
   pointer-events: none;
 }
@@ -87,8 +86,6 @@ body {
   transition: 1s;
 }
 
-=======
->>>>>>> 315adbc069702941257f75b015370a568e779325
 @media screen and (max-width: 1080px) {
   #reseaux {
     display: none;
