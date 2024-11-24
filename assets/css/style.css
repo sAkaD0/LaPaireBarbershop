@@ -77,6 +77,10 @@ body {
   border-color: #000000d9 !important;
 }
 
+.scrolloff {
+  pointer-events: none;
+}
+
 @media screen and (max-width: 1080px) {
   #reseaux {
     display: none;
