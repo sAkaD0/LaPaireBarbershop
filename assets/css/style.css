@@ -1,0 +1,88 @@
+body {
+  background-color: #e6e6e6;
+}
+
+.rotateRight {
+  position: absolute;
+  transform: rotate(90deg);
+  right: 20px;
+  bottom: 60px;
+  color: #5e5e5e;
+}
+
+.rotateLeft {
+  width: 20px !important;
+  color: #5e5e5e !important;
+  position: fixed;
+  left: 15px;
+  bottom: 50px;
+  z-index: 0;
+}
+
+.rotateLeftFb {
+  width: 20px !important;
+  color: #5e5e5e !important;
+  position: fixed;
+  left: 15px;
+  bottom: 80px;
+  z-index: 0;
+}
+
+.lineRight {
+  border-bottom: 1px solid #5e5e5e;
+  width: 40px;
+  height: 2px;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.lineLeft {
+  border-bottom: 1px solid #5e5e5e;
+  width: 40px;
+  height: 2px;
+  transform: rotate(90deg);
+  position: fixed;
+  left: 6px;
+  bottom: 20px;
+  z-index: 0;
+}
+
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+
+}
+
+.nav-item:hover::after {
+  transform: scale(1);
+}
+
+.navbar-burger-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url(../img/burger.svg)
+}
+
+.btn:hover {
+  background-color: #000000d9 !important;
+  border-color: #000000d9 !important;
+}
+
+@media screen and (max-width: 1080px) {
+  #reseaux {
+    display: none;
+  }
+
+  #scroll {
+    display: none;
+  }
+}
