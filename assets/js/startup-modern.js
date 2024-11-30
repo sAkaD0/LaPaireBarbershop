@@ -26,7 +26,7 @@
 
 $(window).on('load', function () {
   $('.apparition').css('opacity', 0);
-  old = $(window).scrollTop();
+  old = 0;
 })
 $(window).scroll(function () {
 
